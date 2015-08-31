@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/alamin/';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
