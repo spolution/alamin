@@ -3,7 +3,12 @@
 	class Home extends CI_Controller{
 
 		public function index(){
-			echo 'Hello World';
+			$data = [
+				'title'		=> 'Beranda',
+				'content'	=> 'home/index'
+			];
+
+			$this->load->view('base', $data);
 		}
 
 	}
