@@ -1,0 +1,34 @@
+	
+	@CHARSET "ISO-8859-1";
+	
+	hgroup > h1, hgroup > h3{ margin: 0; }
+	section#container #back{
+		display: none;
+		padding: 25px; margin-top: 100px;
+		background: #1870b2; width: 440px;
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#3094df', endColorstr='#0d5f9c');
+		background: -webkit-gradient(linear, left top, left bottom, from(#3094df), to(#0d5f9c));
+		background: -moz-linear-gradient(top,  #3094df,  #0d5f9c);
+		
+		-webkit-box-shadow: 8px 10px 10px #333333;
+		-moz-box-shadow: 8px 10px 10px #333333;
+		box-shadow: 8px 10px 10px #333333;
+		
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+	#container #back > .frame{
+		padding: 20px;
+		background: #ffffff;
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#DBD8D8');
+		background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#DBD8D8));
+		background: -moz-linear-gradient(top,  #ffffff,  #DBD8D8);
+		
+		box-shadow: 0 0 15px #333333;
+	}
+	#container #back > .frame > img{ float: left; margin-right: 13px; width: 52px; height: 50px; }
+	#container #back > .frame hgroup{ margin-bottom: 15px; }
+	#container #back > .frame hgroup > h1{ font-size: 30px; margin: 10px 0 5px 0; }
+	#container #back > .frame hgroup > h3{ font-family: consolas; font-weight: normal; }
+	#container #back > .frame table img{ width: 55px; height: 55px; }

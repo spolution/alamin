@@ -1,0 +1,32 @@
+/* simple css-based tooltip */
+div.tooltip {
+	background-color:#000;
+	border:1px solid #fff;
+	padding:10px 15px;
+	width:280px;
+	display:none;
+	color:#fff;
+	text-align:center;
+	font-size:12px;
+
+	/* outline radius for mozilla/firefox only */
+	-moz-box-shadow:0 0 10px #000;
+	-webkit-box-shadow:0 0 10px #000;
+}
+
+#myform h3 {
+	text-align:center;
+	margin:0 0 10px 0;
+}
+
+/* http://www.quirksmode.org/css/forms.html */
+
+/* get rid of those system borders being generated for A tags */
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+}
+

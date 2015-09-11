@@ -1,0 +1,67 @@
+.normal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+.odd {  color:black; }
+.odd:hover{     background-color: #dddddb; } 
+.even {  
+        background-color:#fdf0cb;
+        color:black; 
+       }
+.even:hover{ background-color: #dddddb; } 
+
+table#tpl{
+	width:695px;
+}
+#tpl tr, #tpl td{
+border:1px solid #c3a573;
+padding:3px 7px 2px 7px;
+font-size:11px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#tpl th{
+font-size:10px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#1361aa;
+color:#fff;
+font-weight: bold;
+}
+
+#tpl th a{
+font-size:10px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+tr.odd a, tr.even a{
+font-size:10px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+#tpladm tr, #tpladm td{
+border:1px solid #c3a573;
+padding:3px 7px 2px 7px;
+}
+
+#tpladm th{
+font-size:0.9em;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#927249;
+color:#fff;
+font-weight: bold;
+}
+
+
+.tplpage{
+border:1px solid #000;
+text-decoration: none;
+} 
+
+.tplpage:hover{
+background-color: #dddddb;
+}
