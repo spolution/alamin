@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://aldiunanto/github/alamin/old/';
+$config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------
