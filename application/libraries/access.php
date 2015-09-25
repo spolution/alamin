@@ -18,7 +18,7 @@
 				$this->CI->session->set_userdata($session_data);
 				redirect('home');
 			}else{
-				$this->CI->session->set_flashdata('failed', '<div class="alert alert-danger alert-dismissable">Kombinasi Username dan Password salah!</div>');
+				$this->CI->session->set_flashdata('failed', '<div class="alert alert-danger alert-dismissable"><button class="close" aria-hidden="true" data-dismiss="alert" type="button"><i class="fa fa-close"></i></button>Kombinasi Username dan Password salah!</div>');
 				redirect('admin/login');
 			}
 		}

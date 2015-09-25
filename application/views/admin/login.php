@@ -33,6 +33,7 @@
                         <h3 class="panel-title">Please Sign In</h3>
                     </div>
                     <div class="panel-body">
+                    <?php echo $this->session->flashdata('failed') ?>
                         <form role="form" method="post" action="<?php echo site_url('admin/login') ?>">
                             <fieldset>
                                 <div class="form-group">
