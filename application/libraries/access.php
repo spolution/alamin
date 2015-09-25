@@ -34,7 +34,7 @@
 			
 			redirect('admin/login');
 		}
-		function is_logged_in(){
+		function isLoggedIn(){
 			if ($this->CI->session->userdata('is_login') !== true) {
 				redirect('admin/login');
 			}
