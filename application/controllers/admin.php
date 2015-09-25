@@ -4,41 +4,37 @@
 		
 		function __construct(){
 			parent::__construct();
-			$this->load->model('m_admin','mdl',true);
+			$this->load->model('user', '', true);
 		}
 		function login(){
-			if ($this->session->userdata('is_login') === TRUE) {
+			if ($this->session->userdata('is_login') === true) {
 				redirect('home');
-				exit();
 			}else{
 				$this->load->helper('form');
 				
 				if (empty($_POST)) {
-					$this->load->view('login');
+					$this->load->view('admin/login');
 				}else{
 					$this->load->library('form_validation');
-					$this->form_validation->set_error_delimiters('<span class="error">&raquo; ', '</span>');
+					$this->form_validation->set_error_delimiters('<div class="alert alert-danger alert-dismissable">', '</div>');
 					
-					$this->form_validation->set_rules('username','Username','required|trim|xss_clean');
-					$this->form_validation->set_rules('psw','Password','required|trim|xss_clean|md5');
+					$this->form_validation->set_rules('user_name', 'Username', 'required|trim|xss_clean');
+					$this->form_validation->set_rules('user_password', 'Password', 'required|trim|xss_clean|md5');
 					
 					if ($this->form_validation->run() == TRUE) {
-						$data['uname'] = $this->input->post('username',true);
-						$data['psw'] = $this->input->post('psw',true);
+						$data['user_name'] 		= $this->input->post('user_name',true);
+						$data['user_password'] 	= $this->input->post('user_password',true);
 						
-						$logindata = $this->mdl->check_login($data);
+						$logindata = $this->user->login($data);
 						$this->access->login($logindata);
 					}else{
-						$this->load->view('login');
+						$this->load->view('admin/login');
 					}
 				}
 			}
 		}
 		function logout(){
 			$this->access->logout();
-		}
-		function date(){
-			echo $this->access->get_date();
 		}
 		
 	}
