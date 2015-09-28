@@ -26,7 +26,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body data-controller="<?php echo $this->router->fetch_class() ?>" data-method="<?php echo $this->router->fetch_method() ?>">
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -377,6 +377,10 @@
 
     <!-- jQuery -->
     <script src="<?php echo assets_url('bower_components/jquery/dist/jquery.min.js') ?>"></script>
+    <!-- Developer tools -->
+    <script src="<?php echo assets_url('js/main.js') ?>"></script>
+    <script src="<?php echo assets_url('js/' . $this->router->fetch_class().'.js') ?>"></script>
+    <script src="<?php echo assets_url('js/exec.js') ?>"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo assets_url('bower_components/bootstrap/dist/js/bootstrap.min.js') ?>"></script>
     <!-- Metis Menu Plugin JavaScript -->
