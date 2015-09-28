@@ -14,6 +14,7 @@
     <link href="<?php echo assets_url('dist/css/timeline.css') ?>" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="<?php echo assets_url('dist/css/sb-admin-2.css') ?>" rel="stylesheet">
+    <link href="<?php echo assets_url('css/main.css') ?>" rel="stylesheet">
     <!-- Morris Charts CSS -->
     <link href="<?php echo assets_url('bower_components/morrisjs/morris.css') ?>" rel="stylesheet">
     <!-- Custom Fonts -->
