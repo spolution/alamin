@@ -4,10 +4,12 @@
 		return base_url('assets/' . $file);
 	}
 	function get_start_number($segment_numb){
-		if (! $this->CI->uri->segment($segment_numb)) {
+		$CI =& get_instance();
+
+		if (! $CI->uri->segment($segment_numb)) {
 			$no = 1;
 		}else{
-			$no = $this->CI->uri->segment($segment_numb) + 1;
+			$no = $CI->uri->segment($segment_numb) + 1;
 		}
 		
 		return $no;
