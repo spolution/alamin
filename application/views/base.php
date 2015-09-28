@@ -270,6 +270,12 @@
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
+                            <a href="<?php echo site_url('provider') ?>"><i class="fa fa-location-arrow fa-fw"></i> Provider</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('mastercard') ?>"><i class="fa fa-file-text-o fa-fw"></i> Master Card</a>
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
